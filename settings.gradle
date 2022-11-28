@@ -1,0 +1,9 @@
+rootProject.name = 'qa-diploma'
+include 'src'
+include 'src:test:resources'
+findProject(':src:test:resources')?.name = 'resources'
+include 'src:test:ApiUtils'
+findProject(':src:test:ApiUtils')?.name = 'ApiUtils'
+include 'src:test:page'
+findProject(':src:test:page')?.name = 'page'
+
